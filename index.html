@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portfolio Zildan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/06244ba418.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Home -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo.png" class="logo"  />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Student</p>
+          <h1>
+            Hi, im <span>Zildan</span><br/>
+            Majid From Purwakarta
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Home -->
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/profil2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hai, perkenalkan nama saya Zildan Majid Aminuddin, atau biasa di panggil Zildan. Saya merupakan seorang mahasiswa di Perguruan tinggi yang ada di Bandung, tepatnya di Universitas Pasundan. Saya mahasiswa Fakultas Teknik, prodi Teknik
+              Informatika, sekarang saya mahasiswa semester 1. Usia saya saat ini 19 Tahun.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span><br />70%</li>
+                <li><span>CSS</span><br />50%</li>
+                <li><span>Java Script</span><br />30%</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                 <li><span>2022</span><br />Ketua Osis SMA</li>
+                <li><span>2023</span><br />Ketua Angkatan </li>
+                <li><span>2023</span><br />Organisasi Karang Taruna</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir About -->
+
+    <!-- Education -->
+    <div id="education">
+      <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="education-list">
+          <div>
+            <img src="img/school/logo-unpas.png" alt="" />
+            <h2>Universitas Pasundan</h2>
+            <p>2024 - Sekarang</p>
+            <a href="https://www.unpas.ac.id/" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <img src="img/school/logo-sma.png" alt="" />
+            <h2>SMAN 1 Bungursari</h2>
+            <p>2021 - 2024</p>
+            <a href="https://www.sman1bungursari.sch.id/" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <img src="img/school/logo-smpp.png" alt="" />
+            <h2>SMPN 2 Purwakarta</h2>
+            <p>2018 - 2021</p>
+            <a href="https://www.smpn2purwakarta.sch.id/" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <img src="img/school/logo-sd.png" alt="" />
+            <h2>SDN Tanjungpura</h2>
+            <p>2012 - 2018</p>
+            <a href="" target="_blank">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Education -->
+
+    <!-- Gallery -->
+    <div id="gallery">
+      <div class="container">
+        <h1 class="sub-title">Gallery</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/gallery/foto syukuran angktn 24.jpg" />
+            <div class="layer">
+              <h3>Gallery 1</h3>
+              <p>Kegiatan setelah melaksanakan syukuran angkatan 24</p>
+              <a href="#gallery"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/gallery/foto angktn 24.jpg" />
+            <div class="layer">
+              <h3>Gallery 2</h3>
+              <p>Kegiatan foto bersama rekan prodi angkatan 2024</p>
+              <a href="#gallery"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/gallery/foto kel prodi.jpg" />
+            <div class="layer">
+              <h3>Gallery 3</h3>
+              <p>First meet prodi sebelum melaksanakan kegiatan PKKMB</p>
+              <a href="#gallery"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/gallery/foto ppkmb prodi .jpg" />
+            <div class="layer">
+              <h3>Gallery 4</h3>
+              <p>Foto setlah melaksanakan kegiatan PPKMB </p>
+              <a href="#gallery"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#gallery" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- Akhir Gallery -->
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-paper-plane"></i>zildanmajid16@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>081218661958</p>
+            <div class="social-icons">
+              <a href="https://wa.me/6281223093242" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/zildnnn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="img/bg.jpg" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="Submit-From-to-Google-Sheets">
+              <input type="text" name="nama" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="pesan" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy;Zildan Majid Aminuddin 2024</p>
+      </div>
+    </div>
+    <!-- Akhir Contact -->
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+    <!-- Akhir Script  JS -->
+  </body>
+</html>
